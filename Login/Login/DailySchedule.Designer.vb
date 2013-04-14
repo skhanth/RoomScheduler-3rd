@@ -22,15 +22,17 @@ Partial Class DailySchedule
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DailySchedule))
         Me.lblWelcomeUser = New System.Windows.Forms.Label()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnHelp = New System.Windows.Forms.Button()
         Me.btnDailySchedule = New System.Windows.Forms.Button()
-        Me.txtMap = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.listDailySched = New System.Windows.Forms.ListBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblWelcomeUser
@@ -78,16 +80,6 @@ Partial Class DailySchedule
         Me.btnDailySchedule.Text = "Daily Schedule"
         Me.btnDailySchedule.UseVisualStyleBackColor = True
         '
-        'txtMap
-        '
-        Me.txtMap.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtMap.Location = New System.Drawing.Point(322, 326)
-        Me.txtMap.Multiline = True
-        Me.txtMap.Name = "txtMap"
-        Me.txtMap.ReadOnly = True
-        Me.txtMap.Size = New System.Drawing.Size(438, 223)
-        Me.txtMap.TabIndex = 26
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -100,7 +92,7 @@ Partial Class DailySchedule
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(322, 310)
+        Me.Label2.Location = New System.Drawing.Point(322, 279)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 30
@@ -114,15 +106,25 @@ Partial Class DailySchedule
         Me.listDailySched.Size = New System.Drawing.Size(435, 186)
         Me.listDailySched.TabIndex = 31
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(325, 295)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(435, 254)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 32
+        Me.PictureBox1.TabStop = False
+        '
         'DailySchedule
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 561)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.listDailySched)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtMap)
         Me.Controls.Add(Me.lblWelcomeUser)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnHome)
@@ -131,6 +133,7 @@ Partial Class DailySchedule
         Me.Name = "DailySchedule"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DailySchedule"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -140,8 +143,8 @@ Partial Class DailySchedule
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents btnHelp As System.Windows.Forms.Button
     Friend WithEvents btnDailySchedule As System.Windows.Forms.Button
-    Friend WithEvents txtMap As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents listDailySched As System.Windows.Forms.ListBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

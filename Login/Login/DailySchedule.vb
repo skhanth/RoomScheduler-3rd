@@ -8,8 +8,12 @@ Public Class DailySchedule
 
     Private Sub DailySchedule_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblWelcomeUser.Text = "Welcome " & tmpName
-
-        listDailySched.Items.Add(fileToLoad.ReadToEnd())
+        Dim tempString As String
+        'listDailySched.Items.Add(fileToLoad.ReadToEnd())
+        While (fileToLoad.Peek() <> -1)
+            tempString = fileToLoad.ReadLine()
+            listDailySched.Items.Add(tempString)
+        End While
 
     End Sub
 
