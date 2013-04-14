@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DailySchedule.Designer.vb">
+      <DependentUpon>DailySchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailySchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Error2.Designer.vb">
       <DependentUpon>Error2.vb</DependentUpon>
     </Compile>
@@ -196,6 +202,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DailySchedule.resx">
+      <DependentUpon>DailySchedule.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Error1.resx">
       <DependentUpon>Error1.vb</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +277,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mySchedule.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

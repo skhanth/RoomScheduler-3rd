@@ -1,0 +1,5 @@
+CS3240 Usability Engineering
+CS3010 Information Management Technologies
+CS4080 Advanced Operating Systems
+CS4620 Database Management Systems
+GERM3160 Contemporary German

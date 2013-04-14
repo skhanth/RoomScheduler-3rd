@@ -34,6 +34,7 @@ Partial Class index
         Me.Button10 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
+        Me.lblWelcomeUser = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnDailySchedule
@@ -144,11 +145,21 @@ Partial Class index
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = True
         '
+        'lblWelcomeUser
+        '
+        Me.lblWelcomeUser.AutoSize = True
+        Me.lblWelcomeUser.Location = New System.Drawing.Point(37, 88)
+        Me.lblWelcomeUser.Name = "lblWelcomeUser"
+        Me.lblWelcomeUser.Size = New System.Drawing.Size(77, 13)
+        Me.lblWelcomeUser.TabIndex = 12
+        Me.lblWelcomeUser.Text = "Welcome User"
+        '
         'index
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 561)
+        Me.Controls.Add(Me.lblWelcomeUser)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnHome)
         Me.Controls.Add(Me.Button10)
@@ -162,8 +173,10 @@ Partial Class index
         Me.Controls.Add(Me.btnClasses)
         Me.Controls.Add(Me.btnDailySchedule)
         Me.Name = "index"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Room Scheduler"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnDailySchedule As System.Windows.Forms.Button
@@ -178,4 +191,5 @@ Partial Class index
     Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents btnLogout As System.Windows.Forms.Button
+    Friend WithEvents lblWelcomeUser As System.Windows.Forms.Label
 End Class

@@ -24,8 +24,8 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
-        Me.tbUserName = New System.Windows.Forms.TextBox()
-        Me.tbPassWord = New System.Windows.Forms.TextBox()
+        Me.txtUserName = New System.Windows.Forms.TextBox()
+        Me.txtPassWord = New System.Windows.Forms.TextBox()
         Me.lblForgotPW = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -49,20 +49,20 @@ Partial Class Login
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
-        'tbUserName
+        'txtUserName
         '
-        Me.tbUserName.Location = New System.Drawing.Point(112, 40)
-        Me.tbUserName.Name = "tbUserName"
-        Me.tbUserName.Size = New System.Drawing.Size(395, 20)
-        Me.tbUserName.TabIndex = 2
+        Me.txtUserName.Location = New System.Drawing.Point(112, 40)
+        Me.txtUserName.Name = "txtUserName"
+        Me.txtUserName.Size = New System.Drawing.Size(395, 20)
+        Me.txtUserName.TabIndex = 2
         '
-        'tbPassWord
+        'txtPassWord
         '
-        Me.tbPassWord.Location = New System.Drawing.Point(112, 86)
-        Me.tbPassWord.Name = "tbPassWord"
-        Me.tbPassWord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tbPassWord.Size = New System.Drawing.Size(395, 20)
-        Me.tbPassWord.TabIndex = 3
+        Me.txtPassWord.Location = New System.Drawing.Point(112, 86)
+        Me.txtPassWord.Name = "txtPassWord"
+        Me.txtPassWord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassWord.Size = New System.Drawing.Size(395, 20)
+        Me.txtPassWord.TabIndex = 3
         '
         'lblForgotPW
         '
@@ -99,11 +99,12 @@ Partial Class Login
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblForgotPW)
-        Me.Controls.Add(Me.tbPassWord)
-        Me.Controls.Add(Me.tbUserName)
+        Me.Controls.Add(Me.txtPassWord)
+        Me.Controls.Add(Me.txtUserName)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnLogin)
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -111,8 +112,8 @@ Partial Class Login
     End Sub
     Friend WithEvents btnLogin As System.Windows.Forms.Button
     Friend WithEvents btnCancel As System.Windows.Forms.Button
-    Friend WithEvents tbUserName As System.Windows.Forms.TextBox
-    Friend WithEvents tbPassWord As System.Windows.Forms.TextBox
+    Friend WithEvents txtUserName As System.Windows.Forms.TextBox
+    Friend WithEvents txtPassWord As System.Windows.Forms.TextBox
     Friend WithEvents lblForgotPW As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
