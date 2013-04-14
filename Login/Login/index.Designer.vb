@@ -31,7 +31,6 @@ Partial Class index
         Me.btnAlarms = New System.Windows.Forms.Button()
         Me.btnVirtualTour = New System.Windows.Forms.Button()
         Me.btnHelp = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.lblWelcomeUser = New System.Windows.Forms.Label()
@@ -118,15 +117,6 @@ Partial Class index
         Me.btnHelp.Text = "Help"
         Me.btnHelp.UseVisualStyleBackColor = True
         '
-        'Button10
-        '
-        Me.Button10.Location = New System.Drawing.Point(37, 456)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(139, 23)
-        Me.Button10.TabIndex = 9
-        Me.Button10.Text = "Button10"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
         'btnHome
         '
         Me.btnHome.Location = New System.Drawing.Point(37, 485)
@@ -162,7 +152,6 @@ Partial Class index
         Me.Controls.Add(Me.lblWelcomeUser)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnHome)
-        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.btnHelp)
         Me.Controls.Add(Me.btnVirtualTour)
         Me.Controls.Add(Me.btnAlarms)
@@ -188,7 +177,6 @@ Partial Class index
     Friend WithEvents btnAlarms As System.Windows.Forms.Button
     Friend WithEvents btnVirtualTour As System.Windows.Forms.Button
     Friend WithEvents btnHelp As System.Windows.Forms.Button
-    Friend WithEvents Button10 As System.Windows.Forms.Button
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents btnLogout As System.Windows.Forms.Button
     Friend WithEvents lblWelcomeUser As System.Windows.Forms.Label

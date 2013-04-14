@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class DailySchedule
+Partial Class organization
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,16 +22,50 @@ Partial Class DailySchedule
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnDown = New System.Windows.Forms.Button()
+        Me.btnUp = New System.Windows.Forms.Button()
+        Me.lstAvailableOrg = New System.Windows.Forms.ListBox()
+        Me.lstCurrentOrg = New System.Windows.Forms.ListBox()
         Me.lblWelcomeUser = New System.Windows.Forms.Label()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnHelp = New System.Windows.Forms.Button()
-        Me.btnDailySchedule = New System.Windows.Forms.Button()
-        Me.txtMap = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.listDailySched = New System.Windows.Forms.ListBox()
+        Me.btnOrganization = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnDown
+        '
+        Me.btnDown.Location = New System.Drawing.Point(669, 189)
+        Me.btnDown.Name = "btnDown"
+        Me.btnDown.Size = New System.Drawing.Size(75, 23)
+        Me.btnDown.TabIndex = 38
+        Me.btnDown.Text = "Down"
+        Me.btnDown.UseVisualStyleBackColor = True
+        '
+        'btnUp
+        '
+        Me.btnUp.Location = New System.Drawing.Point(545, 189)
+        Me.btnUp.Name = "btnUp"
+        Me.btnUp.Size = New System.Drawing.Size(75, 23)
+        Me.btnUp.TabIndex = 37
+        Me.btnUp.Text = "Up"
+        Me.btnUp.UseVisualStyleBackColor = True
+        '
+        'lstAvailableOrg
+        '
+        Me.lstAvailableOrg.FormattingEnabled = True
+        Me.lstAvailableOrg.Location = New System.Drawing.Point(513, 244)
+        Me.lstAvailableOrg.Name = "lstAvailableOrg"
+        Me.lstAvailableOrg.Size = New System.Drawing.Size(269, 134)
+        Me.lstAvailableOrg.TabIndex = 36
+        '
+        'lstCurrentOrg
+        '
+        Me.lstCurrentOrg.FormattingEnabled = True
+        Me.lstCurrentOrg.Location = New System.Drawing.Point(513, 24)
+        Me.lstCurrentOrg.Name = "lstCurrentOrg"
+        Me.lstCurrentOrg.Size = New System.Drawing.Size(269, 134)
+        Me.lstCurrentOrg.TabIndex = 35
         '
         'lblWelcomeUser
         '
@@ -39,7 +73,7 @@ Partial Class DailySchedule
         Me.lblWelcomeUser.Location = New System.Drawing.Point(37, 88)
         Me.lblWelcomeUser.Name = "lblWelcomeUser"
         Me.lblWelcomeUser.Size = New System.Drawing.Size(77, 13)
-        Me.lblWelcomeUser.TabIndex = 25
+        Me.lblWelcomeUser.TabIndex = 34
         Me.lblWelcomeUser.Text = "Welcome User"
         '
         'btnLogout
@@ -47,7 +81,7 @@ Partial Class DailySchedule
         Me.btnLogout.Location = New System.Drawing.Point(37, 514)
         Me.btnLogout.Name = "btnLogout"
         Me.btnLogout.Size = New System.Drawing.Size(139, 23)
-        Me.btnLogout.TabIndex = 24
+        Me.btnLogout.TabIndex = 33
         Me.btnLogout.Text = "Logout"
         Me.btnLogout.UseVisualStyleBackColor = True
         '
@@ -56,7 +90,7 @@ Partial Class DailySchedule
         Me.btnHome.Location = New System.Drawing.Point(37, 485)
         Me.btnHome.Name = "btnHome"
         Me.btnHome.Size = New System.Drawing.Size(139, 23)
-        Me.btnHome.TabIndex = 23
+        Me.btnHome.TabIndex = 32
         Me.btnHome.Text = "Home"
         Me.btnHome.UseVisualStyleBackColor = True
         '
@@ -65,83 +99,46 @@ Partial Class DailySchedule
         Me.btnHelp.Location = New System.Drawing.Point(37, 355)
         Me.btnHelp.Name = "btnHelp"
         Me.btnHelp.Size = New System.Drawing.Size(139, 23)
-        Me.btnHelp.TabIndex = 21
+        Me.btnHelp.TabIndex = 31
         Me.btnHelp.Text = "Help"
         Me.btnHelp.UseVisualStyleBackColor = True
         '
-        'btnDailySchedule
+        'btnOrganization
         '
-        Me.btnDailySchedule.Location = New System.Drawing.Point(37, 123)
-        Me.btnDailySchedule.Name = "btnDailySchedule"
-        Me.btnDailySchedule.Size = New System.Drawing.Size(139, 23)
-        Me.btnDailySchedule.TabIndex = 13
-        Me.btnDailySchedule.Text = "Daily Schedule"
-        Me.btnDailySchedule.UseVisualStyleBackColor = True
+        Me.btnOrganization.Location = New System.Drawing.Point(37, 210)
+        Me.btnOrganization.Name = "btnOrganization"
+        Me.btnOrganization.Size = New System.Drawing.Size(139, 23)
+        Me.btnOrganization.TabIndex = 39
+        Me.btnOrganization.Text = "Organization"
+        Me.btnOrganization.UseVisualStyleBackColor = True
         '
-        'txtMap
-        '
-        Me.txtMap.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtMap.Location = New System.Drawing.Point(322, 326)
-        Me.txtMap.Multiline = True
-        Me.txtMap.Name = "txtMap"
-        Me.txtMap.ReadOnly = True
-        Me.txtMap.Size = New System.Drawing.Size(438, 223)
-        Me.txtMap.TabIndex = 26
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(322, 13)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(94, 13)
-        Me.Label1.TabIndex = 29
-        Me.Label1.Text = "my Daily Schedule"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(322, 310)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
-        Me.Label2.TabIndex = 30
-        Me.Label2.Text = "my Map"
-        '
-        'listDailySched
-        '
-        Me.listDailySched.FormattingEnabled = True
-        Me.listDailySched.Location = New System.Drawing.Point(325, 29)
-        Me.listDailySched.Name = "listDailySched"
-        Me.listDailySched.Size = New System.Drawing.Size(435, 186)
-        Me.listDailySched.TabIndex = 31
-        '
-        'DailySchedule
+        'organization
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 561)
-        Me.Controls.Add(Me.listDailySched)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtMap)
+        Me.Controls.Add(Me.btnOrganization)
+        Me.Controls.Add(Me.btnDown)
+        Me.Controls.Add(Me.btnUp)
+        Me.Controls.Add(Me.lstAvailableOrg)
+        Me.Controls.Add(Me.lstCurrentOrg)
         Me.Controls.Add(Me.lblWelcomeUser)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnHome)
         Me.Controls.Add(Me.btnHelp)
-        Me.Controls.Add(Me.btnDailySchedule)
-        Me.Name = "DailySchedule"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "DailySchedule"
+        Me.Name = "organization"
+        Me.Text = "organization"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+    Friend WithEvents btnDown As System.Windows.Forms.Button
+    Friend WithEvents btnUp As System.Windows.Forms.Button
+    Friend WithEvents lstAvailableOrg As System.Windows.Forms.ListBox
+    Friend WithEvents lstCurrentOrg As System.Windows.Forms.ListBox
     Friend WithEvents lblWelcomeUser As System.Windows.Forms.Label
     Friend WithEvents btnLogout As System.Windows.Forms.Button
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents btnHelp As System.Windows.Forms.Button
-    Friend WithEvents btnDailySchedule As System.Windows.Forms.Button
-    Friend WithEvents txtMap As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents listDailySched As System.Windows.Forms.ListBox
+    Friend WithEvents btnOrganization As System.Windows.Forms.Button
 End Class

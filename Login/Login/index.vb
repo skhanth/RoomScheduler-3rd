@@ -17,4 +17,15 @@
         Me.Hide()
 
     End Sub
+
+    Private Sub btnEvents_Click(sender As Object, e As EventArgs) Handles btnEvents.Click
+        manage_event.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnOrganization_Click(sender As Object, e As EventArgs) Handles btnOrganization.Click
+        organization.Show()
+        Me.Hide()
+
+    End Sub
 End Class

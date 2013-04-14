@@ -20,10 +20,6 @@
         End If
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles lblForgotPW.Click
-        ForgotPassword.Show()
-    End Sub
-
     Private Sub tbUserName_TextChanged(sender As Object, e As EventArgs) Handles txtUserName.TextChanged
         userName = txtUserName.Text
     End Sub

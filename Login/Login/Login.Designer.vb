@@ -36,7 +36,7 @@ Partial Class Login
         Me.btnLogin.Location = New System.Drawing.Point(112, 204)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(94, 33)
-        Me.btnLogin.TabIndex = 0
+        Me.btnLogin.TabIndex = 2
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = True
         '
@@ -45,7 +45,7 @@ Partial Class Login
         Me.btnCancel.Location = New System.Drawing.Point(307, 204)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(94, 33)
-        Me.btnCancel.TabIndex = 1
+        Me.btnCancel.TabIndex = 3
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -54,7 +54,7 @@ Partial Class Login
         Me.txtUserName.Location = New System.Drawing.Point(112, 40)
         Me.txtUserName.Name = "txtUserName"
         Me.txtUserName.Size = New System.Drawing.Size(395, 20)
-        Me.txtUserName.TabIndex = 2
+        Me.txtUserName.TabIndex = 0
         '
         'txtPassWord
         '
@@ -62,7 +62,7 @@ Partial Class Login
         Me.txtPassWord.Name = "txtPassWord"
         Me.txtPassWord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassWord.Size = New System.Drawing.Size(395, 20)
-        Me.txtPassWord.TabIndex = 3
+        Me.txtPassWord.TabIndex = 1
         '
         'lblForgotPW
         '

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class DailySchedule
+Partial Class manage_event
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -26,11 +26,11 @@ Partial Class DailySchedule
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnHelp = New System.Windows.Forms.Button()
-        Me.btnDailySchedule = New System.Windows.Forms.Button()
-        Me.txtMap = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.listDailySched = New System.Windows.Forms.ListBox()
+        Me.btnEvents = New System.Windows.Forms.Button()
+        Me.lstCurrentEvent = New System.Windows.Forms.ListBox()
+        Me.lstAvailableEvent = New System.Windows.Forms.ListBox()
+        Me.btnUp = New System.Windows.Forms.Button()
+        Me.btnDown = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblWelcomeUser
@@ -69,68 +69,66 @@ Partial Class DailySchedule
         Me.btnHelp.Text = "Help"
         Me.btnHelp.UseVisualStyleBackColor = True
         '
-        'btnDailySchedule
+        'btnEvents
         '
-        Me.btnDailySchedule.Location = New System.Drawing.Point(37, 123)
-        Me.btnDailySchedule.Name = "btnDailySchedule"
-        Me.btnDailySchedule.Size = New System.Drawing.Size(139, 23)
-        Me.btnDailySchedule.TabIndex = 13
-        Me.btnDailySchedule.Text = "Daily Schedule"
-        Me.btnDailySchedule.UseVisualStyleBackColor = True
+        Me.btnEvents.Location = New System.Drawing.Point(37, 268)
+        Me.btnEvents.Name = "btnEvents"
+        Me.btnEvents.Size = New System.Drawing.Size(139, 23)
+        Me.btnEvents.TabIndex = 13
+        Me.btnEvents.Text = "Events"
+        Me.btnEvents.UseVisualStyleBackColor = True
         '
-        'txtMap
+        'lstCurrentEvent
         '
-        Me.txtMap.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.txtMap.Location = New System.Drawing.Point(322, 326)
-        Me.txtMap.Multiline = True
-        Me.txtMap.Name = "txtMap"
-        Me.txtMap.ReadOnly = True
-        Me.txtMap.Size = New System.Drawing.Size(438, 223)
-        Me.txtMap.TabIndex = 26
+        Me.lstCurrentEvent.FormattingEnabled = True
+        Me.lstCurrentEvent.Location = New System.Drawing.Point(513, 24)
+        Me.lstCurrentEvent.Name = "lstCurrentEvent"
+        Me.lstCurrentEvent.Size = New System.Drawing.Size(269, 134)
+        Me.lstCurrentEvent.TabIndex = 26
         '
-        'Label1
+        'lstAvailableEvent
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(322, 13)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(94, 13)
-        Me.Label1.TabIndex = 29
-        Me.Label1.Text = "my Daily Schedule"
+        Me.lstAvailableEvent.FormattingEnabled = True
+        Me.lstAvailableEvent.Location = New System.Drawing.Point(513, 244)
+        Me.lstAvailableEvent.Name = "lstAvailableEvent"
+        Me.lstAvailableEvent.Size = New System.Drawing.Size(269, 134)
+        Me.lstAvailableEvent.TabIndex = 27
         '
-        'Label2
+        'btnUp
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(322, 310)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 13)
-        Me.Label2.TabIndex = 30
-        Me.Label2.Text = "my Map"
+        Me.btnUp.Location = New System.Drawing.Point(545, 189)
+        Me.btnUp.Name = "btnUp"
+        Me.btnUp.Size = New System.Drawing.Size(75, 23)
+        Me.btnUp.TabIndex = 28
+        Me.btnUp.Text = "Up"
+        Me.btnUp.UseVisualStyleBackColor = True
         '
-        'listDailySched
+        'btnDown
         '
-        Me.listDailySched.FormattingEnabled = True
-        Me.listDailySched.Location = New System.Drawing.Point(325, 29)
-        Me.listDailySched.Name = "listDailySched"
-        Me.listDailySched.Size = New System.Drawing.Size(435, 186)
-        Me.listDailySched.TabIndex = 31
+        Me.btnDown.Location = New System.Drawing.Point(669, 189)
+        Me.btnDown.Name = "btnDown"
+        Me.btnDown.Size = New System.Drawing.Size(75, 23)
+        Me.btnDown.TabIndex = 29
+        Me.btnDown.Text = "Down"
+        Me.btnDown.UseVisualStyleBackColor = True
         '
-        'DailySchedule
+        'manage_event
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 561)
-        Me.Controls.Add(Me.listDailySched)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtMap)
+        Me.Controls.Add(Me.btnDown)
+        Me.Controls.Add(Me.btnUp)
+        Me.Controls.Add(Me.lstAvailableEvent)
+        Me.Controls.Add(Me.lstCurrentEvent)
         Me.Controls.Add(Me.lblWelcomeUser)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnHome)
         Me.Controls.Add(Me.btnHelp)
-        Me.Controls.Add(Me.btnDailySchedule)
-        Me.Name = "DailySchedule"
+        Me.Controls.Add(Me.btnEvents)
+        Me.Name = "manage_event"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "DailySchedule"
+        Me.Text = "Manage Events"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -139,9 +137,9 @@ Partial Class DailySchedule
     Friend WithEvents btnLogout As System.Windows.Forms.Button
     Friend WithEvents btnHome As System.Windows.Forms.Button
     Friend WithEvents btnHelp As System.Windows.Forms.Button
-    Friend WithEvents btnDailySchedule As System.Windows.Forms.Button
-    Friend WithEvents txtMap As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents listDailySched As System.Windows.Forms.ListBox
+    Friend WithEvents btnEvents As System.Windows.Forms.Button
+    Friend WithEvents lstCurrentEvent As System.Windows.Forms.ListBox
+    Friend WithEvents lstAvailableEvent As System.Windows.Forms.ListBox
+    Friend WithEvents btnUp As System.Windows.Forms.Button
+    Friend WithEvents btnDown As System.Windows.Forms.Button
 End Class
