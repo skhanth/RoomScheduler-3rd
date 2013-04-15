@@ -93,3 +93,4 @@ C:\Users\Jin\Desktop\Login\Login\obj\Debug\Login.vbproj.GenerateResource.Cache
 C:\Users\Jin\Desktop\Login\Login\obj\Debug\WindowsApplication1.DailySchedule.resources
 C:\Users\Jin\Desktop\Login\Login\obj\Debug\WindowsApplication1.manage_event.resources
 C:\Users\Jin\Desktop\Login\Login\obj\Debug\WindowsApplication1.organization.resources
+C:\Users\Jin\Desktop\Login\Login\obj\Debug\WindowsApplication1.modifiedSchedule.resources

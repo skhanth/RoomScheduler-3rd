@@ -28,4 +28,8 @@
         Me.Hide()
 
     End Sub
+
+    Private Sub btnHelp_Click(sender As Object, e As EventArgs) Handles btnHelp.Click
+        MessageBox.Show("for help go to support@myroomscheduler.com")
+    End Sub
 End Class

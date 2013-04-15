@@ -3,6 +3,7 @@
 Public Class DailySchedule
 
     Private fileToLoad As New StreamReader("mySchedule.txt")
+    'Private fileToWrite As New StreamWriter("availSchedule.txt")
 
     Public tmpName As String = Login.userName
 
@@ -14,6 +15,7 @@ Public Class DailySchedule
             tempString = fileToLoad.ReadLine()
             listDailySched.Items.Add(tempString)
         End While
+        'listDailySched.Sorted()
 
     End Sub
 
@@ -25,5 +27,13 @@ Public Class DailySchedule
         Me.Hide()
         index.Show()
 
+    End Sub
+
+    Private Sub btnModifed_Click(sender As Object, e As EventArgs) Handles btnModifed.Click
+        modifiedSchedule.Show()
+    End Sub
+
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+        PictureBox1.
     End Sub
 End Class

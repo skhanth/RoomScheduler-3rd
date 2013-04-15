@@ -1,5 +1,5 @@
-8:00AM 	  CS3240 Usability Engineering
-9:00AM 	  CS3010 Information Management Technologies
+08:00AM   CS3240 Usability Engineering
+09:00AM   CS3010 Information Management Technologies
 10:00AM   CS4080 Advanced Operating Systems
 11:00AM   CS4620 Database Management Systems
 12:00AM   GERM3160 Contemporary German

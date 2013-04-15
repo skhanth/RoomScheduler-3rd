@@ -32,6 +32,8 @@ Partial Class DailySchedule
         Me.Label2 = New System.Windows.Forms.Label()
         Me.listDailySched = New System.Windows.Forms.ListBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnModifed = New System.Windows.Forms.Button()
+        Me.btnPrint = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -104,6 +106,7 @@ Partial Class DailySchedule
         Me.listDailySched.Location = New System.Drawing.Point(325, 29)
         Me.listDailySched.Name = "listDailySched"
         Me.listDailySched.Size = New System.Drawing.Size(435, 186)
+        Me.listDailySched.Sorted = True
         Me.listDailySched.TabIndex = 31
         '
         'PictureBox1
@@ -116,11 +119,31 @@ Partial Class DailySchedule
         Me.PictureBox1.TabIndex = 32
         Me.PictureBox1.TabStop = False
         '
+        'btnModifed
+        '
+        Me.btnModifed.Location = New System.Drawing.Point(37, 192)
+        Me.btnModifed.Name = "btnModifed"
+        Me.btnModifed.Size = New System.Drawing.Size(139, 23)
+        Me.btnModifed.TabIndex = 33
+        Me.btnModifed.Text = "Add / Remove"
+        Me.btnModifed.UseVisualStyleBackColor = True
+        '
+        'btnPrint
+        '
+        Me.btnPrint.Location = New System.Drawing.Point(37, 249)
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(139, 23)
+        Me.btnPrint.TabIndex = 34
+        Me.btnPrint.Text = "Print"
+        Me.btnPrint.UseVisualStyleBackColor = True
+        '
         'DailySchedule
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 561)
+        Me.Controls.Add(Me.btnPrint)
+        Me.Controls.Add(Me.btnModifed)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.listDailySched)
         Me.Controls.Add(Me.Label2)
@@ -145,6 +168,8 @@ Partial Class DailySchedule
     Friend WithEvents btnDailySchedule As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents listDailySched As System.Windows.Forms.ListBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents btnModifed As System.Windows.Forms.Button
+    Public WithEvents listDailySched As System.Windows.Forms.ListBox
+    Friend WithEvents btnPrint As System.Windows.Forms.Button
 End Class
